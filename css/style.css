@@ -1,0 +1,494 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container1 {
+        background-image: url("../images/banner.jpg"); 
+        background-size: 100%; 
+        filter: contrast(100%);
+        overflow: hidden;
+
+        
+    
+}
+.top{
+       
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+   
+}
+
+.logo {
+
+    padding: 40px;
+}
+
+.menu {
+
+    padding: 25px;
+    text-shadow: 2px 1px #000;
+
+
+    }
+
+.aprendam {
+
+    text-align: center;
+    color: #FFF;
+    text-shadow: 2px 2px #000;
+    font-size: 52px;
+    margin-top: 16%;
+    
+}
+    
+
+.botao {
+
+    padding: 1%;
+    color: #FFF;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 3px; 
+    font-weight: bold;
+    margin-right: 2px;
+    width: 285px; 
+    margin-top: 2%;
+    
+
+}
+
+.botao-est {
+
+    background-color: #FF7F02;
+    border-radius: 7px;
+    width: 190px;
+    height: 30px;
+    margin-left: 13%;
+    color: #fff;
+    cursor: pointer;
+
+
+
+}
+
+
+.botao-ver {
+
+   background-color: #050301;
+   color: #FFF;
+   border-radius: 6px;
+   border-style: none;
+   width: 200px;
+   height: 30px;
+   margin-top: 1%;
+   cursor: pointer;
+
+
+
+
+}
+
+
+.body1 {
+
+    background-color: #FFF;
+    width: 100%
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    margin-top: 17%;
+    overflow: hidden;
+    order-bottom-color: #AAA ;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+
+}
+
+/* */
+
+
+.body2 {
+    
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -5%;
+    border-bottom-color: #AAA ;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+
+}
+
+.body3 {
+    
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -5%;
+    
+}
+
+
+#img1 {
+
+padding: 6% 1%;
+float: left;
+
+
+}
+
+#img2 {
+
+padding-left: 24%;
+
+}
+
+#img3 {
+
+padding-left: 20%;
+
+}
+
+#img-html {
+
+padding-left: 6%;
+
+}
+
+#img-for {
+
+padding-left: 6%;
+background-color: transparent;
+
+}
+
+
+
+.texto {
+
+    font-size: 35px;
+    color: #F16529;
+    letter-spacing: 5px;
+    padding: 7% 28% 0% 2%;
+    text-align: justify;
+
+}
+
+.texto2 {
+
+    font-size: 35px;
+    color: #F16529;
+    letter-spacing: 5px;
+    padding: 7% 8% 0% 2%;
+    
+
+}
+
+.text2 {
+
+    font-size: 35px;
+    color: #bf1630;
+    letter-spacing: 5px;
+    padding: 7% 8% 0% 2%;
+    
+
+}
+
+.texto3 {
+
+    color: #FFF;
+    padding-left: 5%;
+    font-size: 15px;
+
+}
+
+.texto4 {
+
+    height: 0%;
+    padding-left: 16%;
+
+    font-size: 15px;
+
+}
+
+
+
+
+
+.line  {
+outline: 1px solid;
+color: #dce0e6;
+margin-top: -10%;
+
+
+}
+
+
+.line2 {
+outline: 1px solid;
+color: #dce0e6;
+margin-top: 2%;
+
+
+}
+
+.card{
+
+padding-top: 5%;
+
+
+
+
+}
+
+
+#card1 {
+
+    padding-top: 2%;
+    background-color: #d65b41;
+    border-style: solid;
+    border-color: #b7b0b0;
+    border-width: 3px;
+    width: 260px;
+    height: 330px;
+    box-shadow: 5px 8px 11px #D9D9D9;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    float: left;
+
+}
+
+#card2 {
+
+    padding-top: 2%;
+    background-color: #d65b41;
+    border-style: solid;
+    border-color: #b7b0b0;
+    border-width: 3px;
+    width: 260px;
+    height: 330px;
+    box-shadow: 5px 8px 11px #D9D9D9;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    float: left;
+
+}
+
+#card3 {
+
+    padding-top: 2%;
+    background-color: #48B7E9;
+    border-style: solid;
+    border-color: #b7b0b0;
+    border-width: 3px;
+    width: 260px;
+    height: 330px;
+    box-shadow: 5px 8px 11px #D9D9D9;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    float: left;
+
+}
+
+
+#card4 {
+
+    padding-top: 2%;
+    background-color: #ffd558;
+    border-style: solid;
+    border-color: #b7b0b0;
+    border-width: 3px;
+    width: 260px;
+    height: 330px;
+    box-shadow: 5px 8px 11px #D9D9D9;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    float: left;
+
+}
+
+#card5 {
+
+    padding-top: 2%;
+    background-color: #cc0000;
+    border-style: solid;
+    border-color: #b7b0b0;
+    border-width: 3px;
+    width: 260px;
+    height: 330px;
+    box-shadow: 5px 8px 11px #D9D9D9;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    float: left;
+
+}
+
+#card6 {
+
+    padding-top: 2%;
+    background-color: #bd1430;
+    border-style: solid;
+    border-color: #b7b0b0;
+    border-width: 3px;
+    width: 260px;
+    height: 330px;
+    box-shadow: 5px 8px 11px #D9D9D9;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    float: left;
+
+}
+
+#card7 {
+
+    padding-top: 2%;
+    background-color: #9320ff;
+    border-style: solid;
+    border-color: #b7b0b0;
+    border-width: 3px;
+    width: 260px;
+    height: 330px;
+    box-shadow: 5px 8px 11px #D9D9D9;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    float: left;
+
+}
+
+#card8 {
+
+    padding-top: 2%;
+    background-color: #b12a3f;
+    border-style: solid;
+    border-color: #b7b0b0;
+    border-width: 3px;
+    width: 260px;
+    height: 330px;
+    box-shadow: 5px 8px 11px #D9D9D9;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    float: left;
+
+}
+
+
+
+
+.inf {
+
+    background-color: #FFF;
+    width: 260px;
+    height: 85px;
+    margin-top: 0px;
+
+
+}
+
+.inf3 {
+
+    background-color: #FFF;
+    width: 260px;
+    height: 87px;
+    margin-top: 0px;
+
+
+}
+
+.inf5 {
+
+    background-color: #FFF;
+    width: 260px;
+    height: 80px;
+    margin-top: 0px;
+
+
+}
+
+.inf6 {
+
+    background-color: #FFF;
+    width: 260px;
+    height: 80px;
+    margin-top: 0px;
+
+
+}
+
+.inf8 {
+
+    background-color: #FFF;
+    width: 260px;
+    height: 80px;
+    margin-top: 0px;
+
+
+}
+
+footer {
+    background-image: url("../images/fo3.jpeg"); 
+    filter: contrast(100%);
+    height: 80px;
+    padding: 2%;
+}
+
+
+.esp {
+
+
+    background-color: transparent;
+    height: 20%;
+    float: left;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 70px;
+}
+
+
+article {
+    color: #5e5858;
+    padding: 3% 0% 12%;
+    font-size: 18px;
+    width: 95%;
+    margin-right: 0% 20%;
+    text-align: justify;
+    
+}
+
+
+strong, b {
+    font-weight: bold;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 0px;
+    float: right;
+
+}
+
+nav li {
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}

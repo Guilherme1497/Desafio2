@@ -14,16 +14,57 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="images/ico.png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      
+		<!-- arquivo do desafio js -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+      <!--MEU CSS-->
+      <!-- BIBLIOTECA JQUERY -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <!-- BIBLIOTECA JQUERY UI -->
+      <script src="js/jquery-ui.js"></script>
+      <!-- BIBLIOTECA TOASTR (notificacao personalizada) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+      <!--MEU JS-->
+      <script type="text/javascript" src="js/script.js"></script>
+
 
 
 
 </head>
 
 	<body>
+
+	 
+
+	 <div id="contador"></div>
 	
 		<div  class="container1">
 			<div class="top">
+				
+				<div id="alerta" hidden="true">
+         			<div class="title">Receba Nossas Novidades <i class="fa fa-times"></i></div>
+         			<div class="body">
+            
+            			<form id="novidadesform" name="contact-form" method="POST" >
+              
+              				 <label><strong> e-mail: </strong></label>
+               
+              				 <input type="text" name="email" placeholder="digite seu email">
+              
+             				 <button type="submit">Enviar</button>
+  
+           				</form>
+           
+            			<div class="resultado"></div>
+        			 </div>
+     			</div>
+      
+
 				<div  class="container2">
+
+
 					<img class="logo" src="images/logo.png">
 					<nav>
 						<ul class="menu">
@@ -38,11 +79,26 @@
 				</div>
 			</div>
 
+			
+
 			<h1 class="aprendam"><img class="icon" src="images/icone-header.png"> APRENDA A <br> DESENVOLVER COM A GTI JR.</h1>
 
 			<div align="center">
-				<a href="#"><button class="botao"> HTML5 + CSS3 + JS</button></a>
-				<a href="#"><button class="botao"> Ruby On Rails</button></a>
+				<a href="#card-body2"><button class="botao" onmouseover="mostrar('text_card1')" onmouseout="esconder('text_card1')"> HTML5 + CSS3 + JS</button></a>
+
+				
+				<a href="#card-body3"><button class="botao" onmouseover="mostrar('text_card2')" onmouseout="esconder('text_card2')"> Ruby On Rails</button></a>
+
+				<div id="text_card1" class="hidden">
+							
+					<b>Conheça essa tecnologia para desenvolver sites dinâmicos!</b>
+				</div>
+
+				<div id="text_card2" class="hidden">
+							
+					<b>Conheça essas tecnologia para desenvolver sistemas incriveis de forma simples.</b>
+				</div>
+			
 			</div>
 
 			
@@ -62,14 +118,32 @@
 
         		 <section class="body2">
 
-						<h1 align="center" class="texto2"> <b><strong>  HTML 5 | CSS3 | JAVASCRIPT </strong><br> </h1></br>
+						<h1 align="center" class="texto2" id="card-body2"> <b><strong>  HTML 5 | CSS3 | JAVASCRIPT </strong><br> </h1></br>
 
 
-					<div class="card-body2">
+					<div  class="card-body2" >
 
-						<div id="card1">
-							<img id="img2" src="images/html.png" title="HTML5">
+						<div id="card1"  class="tooltip" >
+							<img id="img2"  src="images/html.png" title="HTML5">
 							<article class="texto3"> HTML 5 - Introdução <br> <strong> Postado por: Dudu</strong></article>
+							<span class="tooltiptext"> Estude HTML5 a norva versão da conhecida linguagem de formatação. </span>
+							<div class="inf">
+								
+							<article class="texto4"> Postado dia 07/04/2018</article>
+							<button  class="botao-est"> <strong> ESTUDAR AGORA </strong></button>
+							
+
+							</div>
+
+						
+
+
+						</div>
+
+						<div id="card2" class="tooltip">
+							<img id="img2" src="images/html.png" title="HTML5">
+							<article class="texto3"> Lista de livros <br> <strong> Postado por: Pablo</strong></article>
+							<span class="tooltiptext">Leia os livros que selecionamos especialmente para você. </span>
 							
 							<div class="inf">
 								
@@ -79,26 +153,15 @@
 							</div>
 
 
-
-						</div>
-
-						<div id="card2">
-							<img id="img2" src="images/html.png" title="HTML5">
-							<article class="texto3"> Lista de livros <br> <strong> Postado por: Pablo</strong></article>
-
-							<div class="inf">
-								
-							<article class="texto4"> Postado dia 07/04/2018</article>
-							<button  class="botao-est"> <strong> ESTUDAR AGORA </strong></button>
-
-							</div>
+						
 
 						</div>
 
 						
-						<div id="card3">
+						<div id="card3" class="tooltip">
 							<img id="img-html" src="images/html-css.png" title="HTML/CSS">
 							<article class="texto3"> HTML 5 - Introdução <br> <strong> Postado por: Bruna</strong></article>
+							<span class="tooltiptext">A união de HTML5/CSS3 pode te proporcionar uma infinidade de ideias.</span>
 
 							<div class="inf3">
 								
@@ -107,20 +170,23 @@
 
 							</div>
 
+
+							
+
 						</div>
 
-						<div id="card4">
-							<img id="img2" src="images/js.png" title="HTML/CSS">
+						<div id="card4" class="tooltip" >
+							<img id="img2" src="images/js.png" title="JS">
 							<article class="texto3"> JS - Introdução <br> <strong> Postado por: Adolfo</strong></article>
+							<span class="tooltiptext">Javascript faça scripts para que possam interagir com  usuário de forma dinâmica.</span>
 
 							<div class="inf">
 								
 							<article class="texto4"> Postado dia 09/04/2018</article>
 							<button  class="botao-est"> <strong> ESTUDAR AGORA </strong></button>
 
-
-
 							</div>
+
 
 
 						</div>
@@ -139,19 +205,20 @@
 
 				<section class="body3">
 
-						<h1 align="center" class="text2"> <b><strong> Ruby On Rails </strong> </h1></br>
+						<h1 align="center" class="text2" id="card-body3"> <b><strong> Ruby On Rails </strong> </h1></br>
 
 
 					<div class="card-body2">
 
-						<div id="card5">
+						<div id="card5" class="tooltip">
 							<img id="img3" src="images/ruby.png" title="HTML5">
 							<article class="texto3"> Ruby - Introdução <br> <strong> Postado por: Claudio</strong></article>
-							
+							<span class="tooltiptext2">Introdução a essa ferramenta incrivel.</span>
+
 							<div class="inf5">
 								
 							<article class="texto4"> Postado dia 07/04/2018</article>
-							<button  class="botao-est"> <strong> ESTUDAR AGORA </strong></button>
+							<button  class="botao-est2"> <strong> ESTUDAR AGORA </strong></button>
 
 							</div>
 
@@ -159,41 +226,44 @@
 
 						</div>
 
-						<div id="card6">
+						<div id="card6" class="tooltip">
 							<img id="img3" src="images/rails.png" title="HTML5">
 							<article class="texto3"> Rails 5 - Introdução<br> <strong> Postado por: Marcel</strong></article>
+							<span class="tooltiptext2">Conheça o Rails que vai facilitar sua vida.</span>
 
 							<div class="inf6">
 								
 							<article class="texto4"> Postado dia 07/04/2018</article>
-							<button  class="botao-est"> <strong> ESTUDAR AGORA </strong></button>
+							<button  class="botao-est2"> <strong> ESTUDAR AGORA </strong></button>
 
 							</div>
 
 						</div>
 
 						
-						<div id="card7">
+						<div id="card7" class="tooltip">
 							<img id="img3" src="images/heroku.png" title="HTML/CSS">
 							<article class="texto3"> Fazendo deploy no Heroku <br> <strong> Postado por: Glauton</strong></article>
+							<span class="tooltiptext2">Conheça o heroku, em que ele pode auxiliar no nosso projeto.</span>
 
 							<div class="inf">
 								
 							<article class="texto4"> Postado dia 07/04/2018</article>
-							<button  class="botao-est"> <strong> ESTUDAR AGORA </strong></button>
+							<button  class="botao-est2"> <strong> ESTUDAR AGORA </strong></button>
 
 							</div>
 
 						</div>
 
-						<div id="card8">
+						<div id="card8" class="tooltip">
 							<img id="img3" src="images/rails.png" title="HTML/CSS">
 							<article class="texto3"> Rails- GEMS  importantes <br> <strong> Postado por: Guilherme</strong></article>
+							<span class="tooltiptext2">GEMS com elas você pode otimizar muito o seu trabalho.</span>
 
 							<div class="inf8">
 								
 							<article class="texto4"> Postado dia 09/04/2018</article>
-							<button  class="botao-est"> <strong> ESTUDAR AGORA </strong></button>
+							<button  class="botao-est2"> <strong> ESTUDAR AGORA </strong></button>
 							
 							</div>
 

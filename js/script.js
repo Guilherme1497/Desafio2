@@ -21,6 +21,8 @@ function esconder(id) {
 
 
 
+
+
 $(document).ready(function() {
   
     contador();
